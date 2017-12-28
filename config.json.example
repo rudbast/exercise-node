@@ -1,0 +1,13 @@
+{
+    "azure": {
+        "account": "azure_account",
+        "storage_access_key": "c3RvcmFnZV9hY2Nlc3Nfa2V5",
+        "container": "images"
+    },
+    "database": {
+        "host": "localhost",
+        "port": "6379",
+        "user": "local",
+        "password": "local",
+    }
+}
