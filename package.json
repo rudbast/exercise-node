@@ -1,0 +1,23 @@
+{
+  "name": "exercise-node",
+  "version": "0.0.1",
+  "description": "exercise with node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test-unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rudbast/exercise-node.git"
+  },
+  "keywords": [
+    "exercise",
+    "node"
+  ],
+  "author": "Rudy",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/rudbast/exercise-node/issues"
+  },
+  "homepage": "https://github.com/rudbast/exercise-node#readme"
+}
