@@ -6,8 +6,9 @@
     },
     "database": {
         "host": "localhost",
-        "port": "6379",
+        "port": 6379,
+        "database": "mydatabase",
         "user": "local",
-        "password": "local",
+        "password": "local"
     }
 }
