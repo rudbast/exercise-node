@@ -21,7 +21,10 @@ function uploadCompanyLogo(companyID, logo) {
 
     return new Promise((resolve, reject) => {
         azureBlob.uploadBlobFromStream(util.bufferToStream(logo), name, (url) => {
-            resolve(companyID, url);
+            resolve({
+                companyID: companyID,
+                url:       url,
+            });
         });
     });
 }
@@ -29,12 +32,11 @@ function uploadCompanyLogo(companyID, logo) {
 /**
  * Update logo url in database of given company.
  *
- * @param   {number} companyID
- * @param   {string} url
+ * @param   {Object}  data
  * @returns {Promise}
  */
-function updateCompanyLogoURL(companyID, url) {
-    return dbConn.none('UPDATE tenant_company SET logo_url = $1 WHERE company_id = $2', [url, companyID]);
+function updateCompanyLogoURL(data) {
+    return dbConn.none('UPDATE tenant_company SET logo_url = $1 WHERE company_id = $2', [data.url, data.companyID]);
 }
 
 /**
