@@ -4,7 +4,8 @@
   "description": "exercise with node js",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "npm run upload-update-logo",
+    "upload-update-logo": "node upload.js",
     "test": "npm run test-unit"
   },
   "repository": {

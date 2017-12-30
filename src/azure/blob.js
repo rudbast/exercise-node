@@ -16,7 +16,7 @@ const blobService = azure.createBlobService(config.azure.account, config.azure.s
  *
  * @param {Stream}   content
  * @param {string}   name
- * @param {Function} callback
+ * @param {Function} [callback]
  */
 function uploadBlobFromStream(content, name, callback) {
     content.pipe(blobService.createWriteStreamToBlockBlob(config.azure.container, name, (err, result) => {
