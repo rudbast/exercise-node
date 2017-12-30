@@ -1,3 +1,6 @@
+/**
+ * Database connection module.
+ */
 'use strict';
 
 const pgp = require('pg-promise')();
