@@ -2,7 +2,7 @@
 
 const pgp = require('pg-promise')();
 
-const config = require(__dirname + '/../config.json');
+const config = require(__dirname + '/../../config.json');
 
 const conn = pgp(config.database);
 

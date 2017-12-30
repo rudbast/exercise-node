@@ -3,7 +3,7 @@
 const _     = require('lodash');
 const azure = require('azure-storage');
 
-const config = require(__dirname + '/../config.json');
+const config = require(__dirname + '/../../config.json');
 
 const blobService = azure.createBlobService(config.azure.account, config.azure.storage_access_key);
 
