@@ -4,6 +4,7 @@
   "description": "exercise with node js",
   "main": "app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "npm run test-unit"
   },
   "repository": {
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/rudbast/exercise-node/issues"
   },
-  "homepage": "https://github.com/rudbast/exercise-node#readme"
+  "homepage": "https://github.com/rudbast/exercise-node#readme",
+  "dependencies": {
+    "azure-storage": "^2.7.0",
+    "lodash": "^4.17.4",
+    "pg-promise": "^7.3.2"
+  }
 }
